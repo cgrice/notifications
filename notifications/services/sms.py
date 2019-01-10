@@ -14,6 +14,7 @@ def send_sms(message, recipient):
 
     client = Client(account_sid, auth_token)
 
+    print("Attempting to send to %s" % recipient)
     message = client.messages.create(
         body=message, messaging_service_sid=service_sid, from_=sender, to=recipient
     )
