@@ -2,6 +2,7 @@ import boto3
 import json
 import os
 
+
 def get_config():
     bucket = os.environ.get("NOTIFICATIONS_CONFIG_BUCKET", "nobucket")
     key = os.environ.get("NOTIFICATIONS_CONFIG_FILE", "config.json")
