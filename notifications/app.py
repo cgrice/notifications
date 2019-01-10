@@ -2,6 +2,7 @@ import json
 
 from notifications.handlers import SMSHandler
 
+
 def outbound_handler(event, context):
     for record in event["Records"]:
         payload = record["body"]
