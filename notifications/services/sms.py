@@ -3,7 +3,7 @@ import os
 from twilio.rest import Client
 
 
-def send_sms(message, recipient):
+def send_sms(recipient, message):
     # Your Account Sid and Auth Token from twilio.com/console
     account_sid = os.environ.get("TWILIO_ACCOUNT_SID", "ACXXXXX")
     auth_token = os.environ.get("TWILIO_AUTH_TOKEN", "XXXXXX")
